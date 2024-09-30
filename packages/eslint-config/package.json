@@ -1,0 +1,17 @@
+{
+  "name": "@chrono-core/eslint-config",
+  "version": "0.0.1",
+  "type": "module",
+  "files": [
+    "./base.ts"
+  ],
+  "scripts": {
+    "clean": "rm -rf .turbo node_modules",
+    "lint": "eslint .",
+    "format": "prettier --check '**/*.{js,json}' ",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@vercel/style-guide": "^6.0.0"
+  }
+}
