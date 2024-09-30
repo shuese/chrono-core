@@ -1,0 +1,12 @@
+{
+  "name": "@chrono-core/typescript-config",
+  "version": "0.0.1",
+  "module": "index.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "prettier": "@vercel/style-guide/prettier",
+  "devDependencies": {
+    "@vercel/style-guide": "^6.0.0"
+  }
+}
