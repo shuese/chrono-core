@@ -1,0 +1,43 @@
+{
+  "name": "chrono-core",
+  "type": "module",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "semantic-release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shuese/chrono-core.git"
+  },
+  "homepage": "https://github.com/shuese/chrono-core?tab=readme-ov-file#chrono-core",
+  "bugs": {
+    "url": "https://github.com/shuese/chrono-core/issues"
+  },
+  "devDependencies": {
+    "@semantic-release/commit-analyzer": "^13.0.0",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^11.0.0",
+    "@semantic-release/release-notes-generator": "^14.0.1",
+    "@types/bun": "latest",
+    "semantic-release": "^24.1.2",
+    "turbo": "^2.1.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "workspaces": [
+    "packages/eslint-config",
+    "packages/typescript-config",
+    "packages/core"
+  ],
+  "packageManager": "bun@1.1.27",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@semantic-release/changelog": "^6.0.3"
+  }
+}
